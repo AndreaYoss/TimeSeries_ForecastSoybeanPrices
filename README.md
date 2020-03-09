@@ -16,7 +16,11 @@
 
 ## Problem Statement
 
-A commodity is essentially a raw material or agricultural product can be bought and sold.  Individual commodities are regarded as indistinguishable from other units of the same type.  Compared to stocks, commodities are quite volatile as they are based not only on prior prices, but also on external global, economic, and supply/demand factors. 
+A commodity is essentially a raw material or agricultural product that can be bought and sold.  Individual commodities are regarded as indistinguishable from other units of the same type, and can be bought and sold on commodities markets using futures.  A futures contract is  an agreement between a buyer and a seller committing the buyer to purchasing a specific quanity of a commodity from the seller sometime in the future at a set price. 
+
+Similar to investing in individual stocks, investors choose to enter into futures contracts when they believe they can profit from the agreement.  Specifically, they often invest in futures if they believe the actually price of the underlying commodity will differ at the time of expiration from the price agreed on in the contract, and so they expect to profit from this difference.  
+
+Unfortunately, commodities prices are notoriously volatile.  Since these are based not only on prior prices and related supply/ demand factors, but also on a varity of macroeconomic factors, long-term prices are difficult to forecast.
 
 In this project, I am focusing on soybeans, and builting an unsupervised learning model that predicts future prices of this commodity.
 
@@ -29,7 +33,7 @@ Since the price of soybeans today are highly correlated with prior prices (i.e.,
 I started off by conducting time series analysis on the 'Settlement Price,' or the average daily price, of soybeans from January 1, 1990 through December 31, 2019.
 
 One assumption to using the Autoregressive Integrated Moving Average (ARIMA) model is that my data are stationary (no systematic changes over time).  To ensure my data met this assumption, I ran an Augmented Dickey Fuller test using $\alpha = 0.05$ on my data.  I set up the null and alternative hypotheses of this test as follows:
-
+    
 $$
 \begin{eqnarray}
 &H_0:& \text{not stationary} \\
@@ -37,7 +41,7 @@ $$
 \end{eqnarray}
 $$
   
-Since my $p$-value > $\alpha$ when I used my original data, I did not have enough evidence to reject the null hypothesis, and so needed to check for stationarity in the differenced data. When I conducted the hypothesis test on the first-order differenced data, my $p$-value << $\alpha$, and so had enough evidence to reject the null hypothesis, and therefore, accept the alternative hypothesis that the first-order differenced data are stationary. 
+Since my $p$ -value > $\alpha$ when I used my original data, I did not have enough evidence to reject the null hypothesis, and so needed to check for stationarity in the differenced data. When I conducted the hypothesis test on the first-order differenced data, my $p$-value << $\alpha$, and so had enough evidence to reject the null hypothesis, and therefore, accept the alternative hypothesis that the first-order differenced data are stationary. 
 
 I was then able to fit my data using an ARIMA model. 
 
