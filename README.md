@@ -26,9 +26,22 @@ Since the price of soybeans today are highly correlated with prior prices (i.e.,
 
 ## Executive Summary
 
-Started by conducting time series analysis on the 'Settlement Price,' or the average daily price, of soybeans from January 1, 1990 through December 31, 2019.
+I started off by conducting time series analysis on the 'Settlement Price,' or the average daily price, of soybeans from January 1, 1990 through December 31, 2019.
 
-Next, I fit my data using an ARIMA model. 
+One assumption to using the Autoregressive Integrated Moving Average (ARIMA) model is that my data are stationary (no systematic changes over time).  To ensure my data met this assumption, I ran an Augmented Dickey Fuller test using $\alpha = 0.05$ on my data.  I set up the null and alternative hypotheses of this test as follows:
+
+$$
+\begin{eqnarray}
+&H_0:& \text{not stationary} \\
+&H_A:& \text{stationary}
+\end{eqnarray}
+$$
+  
+Since my $p$-value > $\alpha$ when I used my original data, I did not have enough evidence to reject the null hypothesis, and so needed to check for stationarity in the differenced data. When I conducted the hypothesis test on the first-order differenced data, my $p$-value << $\alpha$, and so had enough evidence to reject the null hypothesis, and therefore, accept the alternative hypothesis that the first-order differenced data are stationary. 
+
+I was then able to fit my data using an ARIMA model. 
+
+
 
 Then, I incorporated seasonality in a SARIMA model.
 
@@ -58,8 +71,15 @@ I found that the model that did the best was my X MODEL.
 
 ## Modeling
 
-
-
+I built and analyzed the following time series models:
+  
+1. Autoregressive model (AR)
+2. Moving Average model (MR)
+3. Facebook Prophet model
+4. Autoregressive Integrated Moving Average model (ARIMA)
+5. Seasonal Autoregressive Integrated Moving Average model (SARIMA)
+6. Seasonal Autoregressive Integrated Moving Average with eXogenous regressors (SARIMAX)
+  
 ### Evaluation of Model
 
  
