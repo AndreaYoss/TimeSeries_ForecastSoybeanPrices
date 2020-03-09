@@ -1,4 +1,4 @@
-# Capstone
+# Capstone - IN PROGRESS
   
 ##### Author: Andrea Yoss: [LinkedIn](https://www.linkedin.com/in/andreayoss/)
 
