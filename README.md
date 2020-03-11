@@ -1,6 +1,6 @@
 # Capstone - IN PROGRESS
   
-##### Author: Andrea Yoss: [LinkedIn](https://www.linkedin.com/in/andreayoss/)
+#### Author: Andrea Yoss: [LinkedIn](https://www.linkedin.com/in/andreayoss/)
 
 
 ## Table of Contents
@@ -14,6 +14,7 @@
     - [Limitations](#Limitations)
 - [Conclusion and Recommendations](#Conclusion-and-Recommendations)
 - [Data Sources](#Data-Sources)
+- [References](#References)
 
 
 ## Problem Statement
@@ -133,6 +134,17 @@ Additionally, the strength of the United States Dollar relative to the Argentine
 ----
 
 ## Data Sources
+
+Bloomberg L.P. (2020) *[Historical Pricing Data for Soybeans(CBT $/bu) Continuous(S00-USA) from 1/1/1990 to 2/18/2020, CBOTCommodity.](https://github.com/AndreaYoss/Capstone/blob/master/Data/S00-USA-csv.csv)* Retrieved from Bloomberg database. (Accessed: 19 February 2020).
+
+
+
+----
+
+## References
+
+
+
 
 
 
