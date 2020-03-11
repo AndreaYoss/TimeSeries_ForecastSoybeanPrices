@@ -25,27 +25,21 @@ Similar to investing in individual stocks, investors choose to enter into future
 
 Unfortunately, commodities prices are notoriously volatile.  Since these are based not only on prior prices and related supply/ demand factors, but also on a varity of macroeconomic factors, long-term prices are difficult to forecast.
 
-In this project, I am focusing on soybeans, and builting an unsupervised learning model that predicts future prices of this commodity.
+In this project, I am focusing on soybeans, and building an unsupervised learning model that predicts future prices of this commodity.
 
-Since the price of soybeans today are highly correlated with prior prices (i.e., lagged values of itself), I plan to conduct time series analysis on soybean prices. Further, I will identify features that have historically contributed to the volatility of soybean prices, and evaluate their predictive capabilities using the mean absolute error (MAE) as my performance metric. I will ultimately choose the model and features with the smallest MAE.  My primary stakeholders are investors in the futures market who wish to evaluate the favorability of a soybean futures contract. 
+Since the price of soybeans today are highly correlated with prior prices (i.e., lagged values of itself), I plan to conduct time series analysis on soybean prices. Further, I will identify features that have historically contributed to the volatility of soybean prices, and evaluate their predictive capabilities. I will ultimately choose the model the smallest Mean Absolute Error as my evaluation metric.  My primary stakeholders are investors in the futures market who wish to evaluate the favorability of a soybean futures contract. 
   
 ----
 
 ## Executive Summary
 
-I started off by conducting time series analysis on the 'Settlement Price,' or the average daily price, of soybeans from January 1, 1990 through December 31, 2019.
+Using historical daily soybean price data from from January 1, 1990 through December 31, 2019, as well as daily weather data over the same time period, I built a variety of unsupervised learning models to predict prices of soybeans.
 
-One assumption to using the Autoregressive Integrated Moving Average (ARIMA) model is that my data are stationary (no systematic changes over time).  To ensure my data met this assumption, I ran an Augmented Dickey Fuller test using $\alpha = 0.05$ on my data.  I set up the null and alternative hypotheses of this test as follows:
-    
-$$
-\begin{eqnarray}
-&H_0:& \text{not stationary} \\
-&H_A:& \text{stationary}
-\end{eqnarray}
-$$
-  
-Since my $p$ -value > $\alpha$ when I used my original data, I did not have enough evidence to reject the null hypothesis, and so needed to check for stationarity in the differenced data. When I conducted the hypothesis test on the first-order differenced data, my $p$-value << $\alpha$, and so had enough evidence to reject the null hypothesis, and therefore, accept the alternative hypothesis that the first-order differenced data are stationary. 
+To accomplish this, I started off conducting univariate time series analysis just the price.  
 
+
+
+One assumption to using the Autoregressive Integrated Moving Average (ARIMA) model is that my data are stationary (no systematic changes over time).  
 I was then able to fit my data using an ARIMA model. 
 
 
@@ -71,20 +65,13 @@ I found that the model that did the best was my X MODEL.
 
 ----
 
-## Data Dictionaries
-
-
-----
-
 ## Modeling
 
 I built and analyzed the following time series models:
   
-
 1. Autoregressive Integrated Moving Average model (ARIMA)
-2. Facebook Prophet model
-3. Seasonal Autoregressive Integrated Moving Average model (SARIMA)
-4. Seasonal Autoregressive Integrated Moving Average with eXogenous regressors (SARIMAX)
+2. Seasonal Autoregressive Integrated Moving Average model (SARIMA)
+3. Seasonal Autoregressive Integrated Moving Average with eXogenous regressors (SARIMAX)
 
 
 ----
@@ -137,13 +124,7 @@ Additionally, the strength of the United States Dollar relative to the Argentine
 
 Bloomberg L.P. (2020) *[Historical Pricing Data for Soybeans(CBT $/bu) Continuous(S00-USA) from 1/1/1990 to 2/18/2020, CBOTCommodity.](https://github.com/AndreaYoss/Capstone/blob/master/Data/S00-USA-csv.csv)* Retrieved from Bloomberg database. (Accessed: 19 February 2020).
 
-
-
-----
-
-## References
-
-
+[National Oceanic and Atmospheric Administration (NOAA) Climate Data Online](https://www.ncdc.noaa.gov/cdo-web/).
 
 
 
