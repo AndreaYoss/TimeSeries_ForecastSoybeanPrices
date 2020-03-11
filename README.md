@@ -9,8 +9,10 @@
 - [Executive Summary](#Executive-Summary)
 - [Datasets](#Datasets)
 - [Modeling](#Modeling)
-    - [Evaluation of Model](#Evaluation-of-Model)
-- [Conclusion](#Conclusion)
+- [Analysis](#Analysis)
+    - [Model Evaluation](#Model-Evaluation)
+    - [Limitations](#Limitations)
+- [Conclusion and Recommendations](#Conclusion-and-Recommendations)
 - [Data Sources](#Data-Sources)
 
 
@@ -77,25 +79,35 @@ I found that the model that did the best was my X MODEL.
 
 I built and analyzed the following time series models:
   
-1. Autoregressive model (AR)
-2. Moving Average model (MR)
-3. Facebook Prophet model
-4. Autoregressive Integrated Moving Average model (ARIMA)
-5. Seasonal Autoregressive Integrated Moving Average model (SARIMA)
-6. Seasonal Autoregressive Integrated Moving Average with eXogenous regressors (SARIMAX)
-  
-### Evaluation of Model
 
- 
-
-----
-
-## Conclusion
+1. Autoregressive Integrated Moving Average model (ARIMA)
+2. Facebook Prophet model
+3. Seasonal Autoregressive Integrated Moving Average model (SARIMA)
+4. Seasonal Autoregressive Integrated Moving Average with eXogenous regressors (SARIMAX)
 
 
 ----
 
-## Limitations
+## Analysis
+
+
+### Model Evaluation
+
+#### Table 1: Time Series Model Comparison
+
+|Model|Mean Absolute Error|
+|---|---|
+|ARIMA(4,1,4)| MAE|
+|SARIMA(4,1,4)(1,0,72)| MAE|
+|FB Prophet| MAE|
+|SARIMAX(4,1,4)|MAE|
+
+
+<img src="images/predictions_ARIMA_SARIMA.png">
+
+
+
+### Limitations
 
 **Sudden shocks based on market sentiment, and not necessarily any quantifiable features.** 
   
@@ -115,7 +127,17 @@ Additionally, the strength of the United States Dollar relative to the Argentine
 
 ----
 
-## Next Steps
+## Conclusion and Recommendations
+
+
+----
+
+## Data Sources
+
+
+
+
+
 
 
 
