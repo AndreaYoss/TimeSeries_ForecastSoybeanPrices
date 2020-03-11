@@ -103,7 +103,7 @@ I built and analyzed the following time series models:
 |SARIMAX(4,1,4)|MAE|
 
 
-<img src="images/predictions_ARIMA_SARIMA.png">
+<img src="Images/predictions_ARIMA_SARIMA.png">
 
 
 
