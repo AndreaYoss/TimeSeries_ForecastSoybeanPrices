@@ -66,7 +66,7 @@ My results were as follows:
 |---|---|
 |ARIMA(4,1,4)| 0.978|
 |SARIMA(4,1,4)(1,0,72)| 0.770|
-|SARIMAX(4,1,4)(1,0,72|0.770|
+|SARIMAX(4,1,4)(1,0,72)|0.770|
 
 My SARIMA and SARIMAX models had the same MAE, meaning that the inclusion of the exogenous feature did not have an affect on my predictive capability.  We can look at the difference between my ARIMA and SARIMA models in the figure below.
 
