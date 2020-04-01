@@ -21,7 +21,7 @@ Similar to investing in individual stocks, investors choose to enter into future
 
 Unfortunately, commodities prices are notoriously volatile.  Since these are based not only on prior prices and related supply/ demand factors, but also on a varity of macroeconomic factors, long-term prices are difficult to forecast.
 
-In this project, I am focusing on soybeans, and building an unsupervised learning model that predicts future prices of this commodity.
+In this project, I am focusing on soybeans, and building a model that predicts future prices of this commodity.
 
 Since the price of soybeans today are highly correlated with prior prices (i.e., lagged values of itself), I plan to conduct time series analysis on soybean prices. Further, I will identify features that have historically contributed to the volatility of soybean prices, and evaluate their predictive capabilities. I will ultimately choose the model the smallest Mean Absolute Error as my evaluation metric.  My primary stakeholders are investors in the futures market who wish to evaluate the favorability of a soybean futures contract. 
   
