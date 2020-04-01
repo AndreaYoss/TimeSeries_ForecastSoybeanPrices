@@ -29,7 +29,7 @@ Since the price of soybeans today are highly correlated with prior prices (i.e.,
 
 ## Executive Summary
 
-Using historical daily soybean price data from from January 1, 1990 through December 31, 2019, as well as daily weather data over the same time period, I built a variety of unsupervised learning models to predict prices of soybeans.
+Using historical daily soybean price data from from January 1, 1990 through December 31, 2019, as well as daily weather data over the same time period, I built a variety models to predict prices of soybeans.
 
 To accomplish this, I started off conducting univariate time series analysis on just the daily average price of soybeans. During EDA, I identified the presence of certain components that I needed to account for in my model: the existance of a long-term trend, seasonality and residual components of the price data. 
 
