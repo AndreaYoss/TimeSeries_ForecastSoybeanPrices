@@ -15,7 +15,7 @@
 
 ## Problem Statement
 
-A commodity is essentially a raw material or agricultural product that can be bought and sold.  Individual commodities are regarded as indistinguishable from other units of the same type, and can be bought and sold on commodities markets using futures.  A futures contract is  an agreement between a buyer and a seller committing the buyer to purchasing a specific quanity of a commodity from the seller sometime in the future at a set price. 
+A commodity is essentially a raw material or agricultural product that can be bought and sold.  Individual commodities are regarded as indistinguishable from other units of the same type, and can be bought and sold on commodities markets using futures.  A futures contract is  an agreement between a buyer and a seller committing the buyer to purchasing a specific quantity of a commodity from the seller sometime in the future at a set price. 
 
 Similar to investing in individual stocks, investors choose to enter into futures contracts when they believe they can profit from the agreement.  Specifically, they often invest in futures if they believe the actually price of the underlying commodity will differ at the time of expiration from the price agreed on in the contract, and so they expect to profit from this difference.  
 
