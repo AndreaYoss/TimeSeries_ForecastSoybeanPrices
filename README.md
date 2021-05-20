@@ -1,4 +1,4 @@
-# Capstone Project: Forecasting Soybean Prices Using Time Series Analysis
+# Forecasting Soybean Prices Using Time Series Analysis
   
 #### Author: Andrea Yoss: [LinkedIn](https://www.linkedin.com/in/andreayoss/)
 
